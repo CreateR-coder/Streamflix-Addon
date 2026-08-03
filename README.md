@@ -75,5 +75,5 @@ Addon for github.com/CreateR-coder/Streamflix/
 <br>
 <br>
 <br>
-This uses AI btw, specifically Gemini, this is vibe coded.
+This uses AI btw, specifically Gemini, this is vibe coded in about an hour.
 
