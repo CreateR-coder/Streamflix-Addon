@@ -13,8 +13,8 @@ An experimental, AI-assisted extension for [Streamflix](https://github.com/Creat
 2. Launch this addon alongside the main executable.
 3. Open your browser and navigate to `http://127.0.0.1:5000`.
 
-## License & Disclaimer
+## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+This project is licensed under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). 
 
-This project is intended strictly for educational and experimental purposes. Users are responsible for ensuring their usage complies with local laws and the terms of service of any third-party services accessed.
+When re-using or sharing this code, please attribute original authorship to [Your Username](https://github.com/CreateR-coder/).
