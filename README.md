@@ -17,4 +17,4 @@ An experimental, AI-assisted extension for [Streamflix](https://github.com/Creat
 
 This project is licensed under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). 
 
-When re-using or sharing this code, please attribute original authorship to [Your Username](https://github.com/CreateR-coder/).
+When re-using or sharing this code, please attribute original authorship to [CreateR-Coder](https://github.com/CreateR-coder/).
