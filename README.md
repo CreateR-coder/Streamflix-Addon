@@ -13,6 +13,10 @@ An experimental, AI-assisted extension for [Streamflix](https://github.com/Creat
 2. Launch this addon alongside the main executable.
 3. Open your browser and navigate to `http://127.0.0.1:5000`.
 
+## Legal Note
+
+This project is not completely AI generated, it is AI modified though but has lots of human involvement
+
 ## License
 
 This project is licensed under the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0). 
