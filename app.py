@@ -8,7 +8,7 @@ HTML_TEMPLATE = """
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Embed Player</title>
+    <title>{{ title }}</title>
     <style>
         body, html {
             margin: 0;
@@ -57,17 +57,18 @@ HTML_TEMPLATE = """
 </html>
 """
 
-# Movie Route: Handles URLs like /94997
-@app.route('/<movie_id>')
-def serve_movie(movie_id):
+
+@app.route("/<movie_id>")
+def serve_movie_embed(movie_id):
     embed_url = f"https://www.vidking.net/embed/movie/{movie_id}?color=e50914"
-    return render_template_string(HTML_TEMPLATE, embed_url=embed_url)
+    return render_template_string(HTML_TEMPLATE, embed_url=embed_url, title=f"Movie Embed {movie_id}")
 
-# Series Route: Handles URLs like /94997/1/1
-@app.route('/<show_id>/<season>/<episode>')
-def serve_series(show_id, season, episode):
-    embed_url = f"https://www.vidking.net/embed/tv/{show_id}/{season}/{episode}?color=e50914"
-    return render_template_string(HTML_TEMPLATE, embed_url=embed_url)
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=1234, debug=True)
+@app.route("/<series_id>/<season>/<episode>")
+def serve_tv_embed(series_id, season, episode):
+    embed_url = f"https://www.vidking.net/embed/tv/{series_id}/{season}/{episode}?color=e50914"
+    return render_template_string(HTML_TEMPLATE, embed_url=embed_url, title=f"TV Embed {series_id} S{season}E{episode}")
+
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=1234, debug=True)
